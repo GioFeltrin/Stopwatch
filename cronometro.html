@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="cronometro.js"></script>
     <title>Cronômetro</title>
 </head>
 <body>
@@ -15,23 +16,31 @@
         <main>
             <div id="temporizador">
                 <div class="marcador" >
-                    <span class="tempo">00</span>
+                    <span class="tempo" name="tempo" id="horas" >00</span>
                     <span class="unidade">horas</span>
                 </div>
+                <span class="pontos">:</span>
                 <div class="marcador" >
-                    <span class="tempo">00</span>
+                    <span class="tempo" name="tempo" id="minutos" >00</span>
                     <span class="unidade">minutos</span>
                 </div>
+                <span class="pontos">:</span>
                 <div class="marcador" >
-                    <span class="tempo">00</span>
+                    <span class="tempo" name="tempo" id="segundos">00</span>
                     <span class="unidade">segundos</span>
-                </div>      
+                </div>  
+                <span class="pontos">:</span>
+                <div class="marcador">
+                    <span class="tempo" name="tempo" id="centi">00</span>
+                    <span class="unidade"> centésimo</span>
+
+                </div>
             </div>
 
             <div id="botoes">
-                <button id="iniciar"> INICIAR </button>
-                <BUtton id="pausar"> PAUSAR </BUtton>
-                <BUtton id="zerar"> ZERAR </BUtton>
+                <button id="iniciar" onclick= "iniciar ()"> INICIAR </button>
+                <BUtton id="pausar" onclick="pausar ()"> PAUSAR </BUtton>
+                <BUtton id="zerar" onclick="zerar ()"> ZERAR </BUtton>
             </div>
         </main>
     </div>
